@@ -22,7 +22,7 @@
   
 **辅助工具：（用途后文解释）**
 
-[Bianbu镜像包](https://archive.spacemit.com/image/k1/version/bianbu/v2.0rc2/)
+Bianbu镜像包:https://archive.spacemit.com/image/k1/version/bianbu/v2.0rc2/
 
 
 **烧录过程** 
