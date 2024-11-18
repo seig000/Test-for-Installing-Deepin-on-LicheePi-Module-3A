@@ -32,9 +32,13 @@ https://archive.spacemit.com/image/k1/version/bianbu/v2.0rc2/
 **烧录过程** 
 
 按住boot将开发板usb连接电脑，使用titan扫描设备能扫描到即可
+
 ![扫描](pictures/1.png)
+
 本地文件需要打包好的zip格式，使用zip的话还需要再titan工具内解压，需要一定时间。
+
 *建议手动解压完成后使用本地目录刷机
+
 目前,如果只使用deepin的两个文件解压（*win下需使用7-zip解压）拼起来作为刷机目录的话会发现缺失配置文件:
 
 ![缺失配置文件](pictures/2.png)
@@ -43,7 +47,7 @@ https://archive.spacemit.com/image/k1/version/bianbu/v2.0rc2/
 
 ![分区配置](pictures/3.png)
 
-将里面的文件替换为deepin两个文件解压后里面的内容，包括root\boot\u-tool等，示例如图：
+将里面的文件替换为deepin两个文件解压后里面的内容，包括root\boot\u-boot等，示例如图：
 
 ![文件替换](pictures/4.png)
 
@@ -149,11 +153,15 @@ PS：启动过程中仍然存在部分问题，这里先只做记录
 
 ##  三、总结
 
+
 镜像烧录过程中发现问题：
+
 Deepin系统对 LicheePi Module 3A 是有支持的
+
+
 怀疑uboot导入时没有正确引导使用boot.ext4中extlinux的环境配置，使用了env-k1-x.txt中的环境配置，但该环境配置存在存在问题：
 
-env中knl和ramdisk版本号不符、dtb_addr和ramdisk_addr没有声明、load dtb路径不符
+环境中中knl(kernel)和ramdisk版本号不符、dtb_addr和ramdisk_addr没有声明、load dtb路径不符
 
 故镜像无法开箱即用。本文测试过程中手动修复了环境问题，可以成功开机。
 
