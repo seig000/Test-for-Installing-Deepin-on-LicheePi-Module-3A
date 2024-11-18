@@ -15,7 +15,7 @@
 
 **镜像获取**：
 
-[deepin20240815](https://ci.deepin.com/repo/deepin/deepin-ports/cdimage/20240815/riscv64/）
+deepin20240815地址:https://ci.deepin.com/repo/deepin/deepin-ports/cdimage/20240815/riscv64/
 
 下载：deepin-23-beige-preview-riscv64-musebox-20240815-115503.
   及  uboot-k1-spacemit.zip
@@ -75,6 +75,7 @@ Bianbu镜像包:https://archive.spacemit.com/image/k1/version/bianbu/v2.0rc2/
 ![](pictures/10.png)
 
 发现存在问题：
+
 ![](pictures/11.png)
 
 考虑可能内核版本号和dtb路径存在问题，查看一下版本号和dtbs的路径：
