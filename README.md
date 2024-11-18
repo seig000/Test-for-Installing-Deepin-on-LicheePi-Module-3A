@@ -92,7 +92,7 @@ https://archive.spacemit.com/image/k1/version/bianbu/v2.0rc2/
 
 ![](pictures/12.png)
 
-dtbs路径
+dtbs路径：
 
 ![](pictures/13.png)
 
@@ -116,22 +116,22 @@ dtbs路径
 
 Printenv确认一遍三个位置均修改成功再次boot，还是有报错：
 
-log 如图所示
+log 如图所示：
 
 ![](pictures/18.png)
 
 ![](pictures/19.png)
 
 
-从log可以看到，是在load ramdisk和load dtb环节出现了问题，检查了一遍env发现:dtb_addr和ramdisk_addr没有声明
+从log可以看到，是在load ramdisk和load dtb环节出现了问题，检查了一遍env发现:dtb_addr和ramdisk_addr没有声明：
 
 ![](pictures/20.png)
 
-去bianbu的env.bin里面扒拉到dtb_addr和ramdisk_addr用一下，将dtb_addr和ramdisk_addr声明补上
+去bianbu的env.bin里面扒拉到dtb_addr和ramdisk_addr用一下，将dtb_addr和ramdisk_addr声明补上：
 
 ![](pictures/21.png)
 
-再次设置环境后重新尝试boot
+再次设置环境后重新尝试boot：
 
 ![](pictures/22.png)
 
@@ -141,7 +141,7 @@ boot成功，成功进入系统！
 ![](pictures/23.png)
 
 
-PS：启动过程中仍然存在部分问题，这里先只做记录
+PS：启动过程中仍然存在部分问题，这里先只做记录：
 
 ![](pictures/24.png)
 
