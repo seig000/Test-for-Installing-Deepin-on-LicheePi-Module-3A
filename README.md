@@ -29,7 +29,11 @@
 解决办法是找到Bianbu能直接用titan刷机的镜像的zip，使用已经写好的配置文件解压后作为刷机目录，然后配置分区文件：
 ![分区配置](pictures/3.png)
 将里面的文件替换为deepin两个文件解压后里面的内容，包括root\boot\u-tool等，示例如图：
+
 ![文件替换](pictures/4.png)
+
 ![文件替换2](pictures/5.png)
+
 替换完成点击开始刷机即可，等待烧录完成
+
 ![烧录完成](pictures/6.png)
