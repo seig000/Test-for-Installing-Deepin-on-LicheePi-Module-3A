@@ -1,6 +1,6 @@
 ### H1 RISC-V实体设备LicheePi Module 3A安装deepin操作系统 测试记录
 ## H2 一、镜像烧录
-**工具准备**
+**工具准备**/n
 操作环境：win11  设备：LicheePi 3A
 [板卡介绍](https://wiki.sipeed.com/hardware/zh/lichee/K1/lpi3a/1_intro.html)
 
