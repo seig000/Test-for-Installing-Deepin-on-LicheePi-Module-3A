@@ -53,8 +53,11 @@ Bianbu镜像包:https://archive.spacemit.com/image/k1/version/bianbu/v2.0rc2/
 *使用RV DebuggerPlus连接开发板
 
 参考[sipeed文档](https://wiki.sipeed.com/hardware/zh/lichee/K1/lpi3a/4_peripheral.html)进行连接：
+
 *（这里注意板子要记得插电！！！！不然没有信号）*
+
 插上去之后在设备管理器中确认板子的端口号：
+
 ![duankouhao](pictures/7.png)
 
 使用串口工具putty进行通信,配置如下，端口号为上图中看到的。
