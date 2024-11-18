@@ -35,7 +35,7 @@ https://archive.spacemit.com/image/k1/version/bianbu/v2.0rc2/
 ![扫描](pictures/1.png)
 本地文件需要打包好的zip格式，使用zip的话还需要再titan工具内解压，需要一定时间。
 *建议手动解压完成后使用本地目录刷机
-目前,如果只使用deepin的两个文件解压（*window下需使用7-zip解压）拼起来作为刷机目录的话会发现缺失配置文件:
+目前,如果只使用deepin的两个文件解压（*win下需使用7-zip解压）拼起来作为刷机目录的话会发现缺失配置文件:
 
 ![缺失配置文件](pictures/2.png)
 
