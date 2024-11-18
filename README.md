@@ -32,9 +32,13 @@ Bianbu镜像包:https://archive.spacemit.com/image/k1/version/bianbu/v2.0rc2/
 本地文件需要打包好的zip格式，使用zip的话还需要再titan工具内解压，需要一定时间。
 *建议手动解压完成后使用本地目录刷机
 目前,如果只使用deepin的两个文件解压（*window下需使用7-zip解压）拼起来作为刷机目录的话会发现缺失配置文件:
+
 ![缺失配置文件](pictures/2.png)
+
 解决办法是找到Bianbu能直接用titan刷机的镜像的zip，使用已经写好的配置文件解压后作为刷机目录，然后配置分区文件：
+
 ![分区配置](pictures/3.png)
+
 将里面的文件替换为deepin两个文件解压后里面的内容，包括root\boot\u-tool等，示例如图：
 
 ![文件替换](pictures/4.png)
@@ -89,9 +93,11 @@ dtbs路径
 1、kernel和ramdisk版本号不符
 
 ![](pictures/14.png)
+
 ![](pictures/15.png)
 
 2、dtbs路径设置不符
+
 ![](pictures/16.png)
 
 使用setenv修改一下
@@ -133,6 +139,7 @@ PS：启动过程中仍然存在部分问题，这里先只做记录
 *这个状态可以ssh作为服务器连接，但是直接连接显示器+键盘时无法独立操作
 
 显示如下：
+
 ![](pictures/25.png)
 
 ##  三、总结
