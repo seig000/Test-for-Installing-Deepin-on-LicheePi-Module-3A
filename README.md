@@ -17,12 +17,14 @@
 
 下载：deepin-23-beige-preview-riscv64-musebox-20240815-115503.
   及  uboot-k1-spacemit.zip
+  
 **辅助工具：（用途后文解释）**
 
 [Bianbu镜像包](https://archive.spacemit.com/image/k1/version/bianbu/v2.0rc2/)
 
 
 **烧录过程** 
+
 按住boot将开发板usb连接电脑，使用titan扫描设备能扫描到即可
 ![扫描](pictures/1.png)
 本地文件需要打包好的zip格式，使用zip的话还需要再titan工具内解压，需要一定时间。
@@ -45,6 +47,32 @@
 
 
 ## H2 二、分区问题处理
-*使用RV DebuggerPlus连接开发板
-参考[sipeed文档](https://wiki.sipeed.com/hardware/zh/lichee/K1/lpi3a/4_peripheral.html)进行连接：
 
+*使用RV DebuggerPlus连接开发板
+
+参考[sipeed文档](https://wiki.sipeed.com/hardware/zh/lichee/K1/lpi3a/4_peripheral.html)进行连接：
+*（这里注意板子要记得插电！！！！不然没有信号）*
+插上去之后在设备管理器中确认板子的端口号：
+![duankouhao](pictures/7.png)
+
+使用串口工具putty进行通信,配置如下，端口号为上图中看到的。
+
+![](pictures/8.png)
+
+连接上之后查看日志：
+
+![](pictures/9.png)
+
+![](pictures/10.png)
+
+发现存在问题：
+![](pictures/11.png)
+
+考虑可能内核版本号和dtb路径存在问题，查看一下版本号和dtbs的路径：
+版本号：
+
+![](pictures/12.png)
+
+dtbs路径
+
+![](pictures/13.png)
