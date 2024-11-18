@@ -19,7 +19,7 @@
 [Bianbu镜像包](https://archive.spacemit.com/image/k1/version/bianbu/v2.0rc2/)
 
 
-# 烧录过程
+** 烧录过程 **
 按住boot将开发板usb连接电脑，使用titan扫描设备能扫描到即可
 ![扫描](pictures/1.png)
 本地文件需要打包好的zip格式，使用zip的话还需要再titan工具内解压，需要一定时间。
@@ -37,3 +37,11 @@
 替换完成点击开始刷机即可，等待烧录完成
 
 ![烧录完成](pictures/6.png)
+
+烧录成功，但是尝试开机进系统失败，接下来连接串口进行检查。
+
+
+## H2 二、分区问题处理
+*使用RV DebuggerPlus连接开发板
+参考[sipeed文档](https://wiki.sipeed.com/hardware/zh/lichee/K1/lpi3a/4_peripheral.html)进行连接：
+
