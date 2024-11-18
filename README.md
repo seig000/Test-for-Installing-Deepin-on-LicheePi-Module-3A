@@ -15,14 +15,18 @@
 
 **镜像获取**：
 
-deepin20240815地址:https://ci.deepin.com/repo/deepin/deepin-ports/cdimage/20240815/riscv64/
+deepin20240815地址:
+
+https://ci.deepin.com/repo/deepin/deepin-ports/cdimage/20240815/riscv64/
 
 下载：deepin-23-beige-preview-riscv64-musebox-20240815-115503.
   及  uboot-k1-spacemit.zip
   
 **辅助工具：（用途后文解释）**
 
-Bianbu镜像包:https://archive.spacemit.com/image/k1/version/bianbu/v2.0rc2/
+Bianbu镜像包:
+
+https://archive.spacemit.com/image/k1/version/bianbu/v2.0rc2/
 
 
 **烧录过程** 
