@@ -1,5 +1,5 @@
-### H1 RISC-V实体设备LicheePi Module 3A安装deepin操作系统 测试记录
-## H2 一、镜像烧录
+###  RISC-V实体设备LicheePi Module 3A安装deepin操作系统 测试记录
+##  一、镜像烧录
 **工具准备**
 
 操作环境：win11  设备：LicheePi 3A  [板卡介绍](https://wiki.sipeed.com/hardware/zh/lichee/K1/lpi3a/1_intro.html)
@@ -48,7 +48,7 @@ Bianbu镜像包:https://archive.spacemit.com/image/k1/version/bianbu/v2.0rc2/
 烧录成功，但是尝试开机进系统失败，接下来连接串口进行检查。
 
 
-## H2 二、分区问题处理
+##  二、分区问题处理
 
 *使用RV DebuggerPlus连接开发板
 
@@ -135,7 +135,7 @@ PS：启动过程中仍然存在部分问题，这里先只做记录
 显示如下：
 ![](pictures/25.png)
 
-## H2 三、总结
+##  三、总结
 
 镜像烧录过程中发现问题：
 Deepin系统对 LicheePi Module 3A 是有支持的
