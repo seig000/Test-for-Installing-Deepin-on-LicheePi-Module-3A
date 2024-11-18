@@ -69,6 +69,7 @@
 ![](pictures/11.png)
 
 考虑可能内核版本号和dtb路径存在问题，查看一下版本号和dtbs的路径：
+
 版本号：
 
 ![](pictures/12.png)
@@ -76,3 +77,80 @@
 dtbs路径
 
 ![](pictures/13.png)
+
+
+再printenv检查一下环境设置，发现问题：
+
+1、kernel和ramdisk版本号不符
+
+![](pictures/14.png)
+![](pictures/15.png)
+
+2、dtbs路径设置不符
+![](pictures/16.png)
+
+使用setenv修改一下
+
+![](pictures/17.png)
+
+
+Printenv确认一遍三个位置均修改成功再次boot，还是有报错：
+
+log 如图所示
+
+![](pictures/18.png)
+
+![](pictures/19.png)
+
+
+从log可以看到，是在load ramdisk和load dtb环节出现了问题，检查了一遍env发现:dtb_addr和ramdisk_addr没有声明
+
+![](pictures/20.png)
+
+去bianbu的env.bin里面扒拉到dtb_addr和ramdisk_addr用一下，将dtb_addr和ramdisk_addr声明补上
+
+![](pictures/21.png)
+
+再次设置环境后重新尝试boot
+
+![](pictures/22.png)
+
+boot成功，成功进入系统！
+
+
+![](pictures/23.png)
+
+
+PS：启动过程中仍然存在部分问题，这里先只做记录
+
+![](pictures/24.png)
+
+*这个状态可以ssh作为服务器连接，但是直接连接显示器+键盘时无法独立操作
+
+显示如下：
+![](pictures/25.png)
+
+## H2 三、总结
+
+镜像烧录过程中发现问题：
+Deepin系统对 LicheePi Module 3A 是有支持的
+怀疑uboot导入时没有正确引导使用boot.ext4中extlinux的环境配置，使用了env-k1-x.txt中的环境配置，但该配置存在问题：
+
+env中knl和ramdisk版本号不符、dtb_addr和ramdisk_addr没有声明、load dtb路径不符
+
+故导致改镜像无法开箱即用。本文测试过程中手动修复了环境问题，可以成功开机。
+
+除此之外可能存在其他使用的问题，暂时有待进一步测试。
+
+附最后一次boot的日志和开机日志 .txt
+
+
+
+
+
+
+
+
+
+
+鸣谢 @Zhiyuan Wan  协力
