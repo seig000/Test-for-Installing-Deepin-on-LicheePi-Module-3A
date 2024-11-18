@@ -19,7 +19,7 @@
 [Bianbu镜像包](https://archive.spacemit.com/image/k1/version/bianbu/v2.0rc2/)
 
 
-**bold test**烧录过程 
+**烧录过程** 
 按住boot将开发板usb连接电脑，使用titan扫描设备能扫描到即可
 ![扫描](pictures/1.png)
 本地文件需要打包好的zip格式，使用zip的话还需要再titan工具内解压，需要一定时间。
