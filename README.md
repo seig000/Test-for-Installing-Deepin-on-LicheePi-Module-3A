@@ -6,6 +6,7 @@
 **工具准备**
 
 操作环境： win11  设备： LicheePi 3A  [板卡介绍](https://wiki.sipeed.com/hardware/zh/lichee/K1/lpi3a/1_intro.html)
+测试镜像版本：deepin-23-beige-preview-riscv64-musebox-20240815-115503
 
 **烧录参考**：
 
